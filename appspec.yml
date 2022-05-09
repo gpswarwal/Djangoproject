@@ -1,0 +1,12 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/
+hooks:
+  BeforeInstall:
+    - location: file.sh
+      timeout: 300
+  AfterInstall:
+    - location: newfolder.sh
+      timeout: 300
