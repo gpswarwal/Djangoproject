@@ -33,7 +33,7 @@ sudo systemctl enable gunicorn.socket
 
 echo "server {
     listen 80;
-    server_name ;
+    server_name 54.64.250.254;
     location = /favicon.ico { access_log off; log_not_found off; }
     location /static/ {
         root /home/ubuntu/;
