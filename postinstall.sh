@@ -33,7 +33,7 @@ sudo systemctl enable gunicorn.socket
 
 echo "server {
     listen 80;
-    server_name 54.64.250.254;
+    server_name 13.112.32.168;
     location = /favicon.ico { access_log off; log_not_found off; }
     location /static/ {
         root /home/ubuntu/;
@@ -45,7 +45,7 @@ echo "server {
 }" > /etc/nginx/sites-available/first
 
 
-sudo ln -s /etc/nginx/sites-available/first /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/ /etc/nginx/sites-enabled/
 
 sudo rm /etc/nginx//sites-enabled/default
 
