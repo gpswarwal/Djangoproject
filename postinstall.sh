@@ -45,7 +45,7 @@ echo "server {
 }" > /etc/nginx/sites-available/first
 
 
-sudo ln -s /etc/nginx/sites-available/ /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/first /etc/nginx/sites-enabled/
 
 sudo rm /etc/nginx//sites-enabled/default
 
