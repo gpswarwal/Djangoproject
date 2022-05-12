@@ -5,8 +5,8 @@ files:
     destination: /home/ubuntu/
 hooks:
   BeforeInstall:
-    - location: file.sh
+    - location: preinstall.sh
       timeout: 200
   AfterInstall:
-    - location: newfolder.sh
+    - location: postinstall.sh
       timeout: 200
